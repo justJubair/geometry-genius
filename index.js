@@ -47,3 +47,19 @@ function calculateParallelogramArea() {
           area = base * height;
     setInnerHTMLArea('parallelogram-area', area);      
 }
+
+// calculate the area of rhombus
+function calculateRhombusArea() {
+    const diagonalOne = getInputValue('rhombus-diagonal-one'),
+          diagonalTwo = getInputValue('rhombus-diagonal-two'),
+          area = diagonalOne * diagonalTwo;
+    setInnerHTMLArea('rhombus-area', area);      
+}
+
+// calculate the area of pentagon
+function calculatePentagonArea() {
+    const perimeter = getInputValue('pentagon-perimeter'),
+          apothem = getInputValue('pentagon-apothem'),
+          area = 0.5 * perimeter * apothem;
+    setInnerHTMLArea('pentagon-area', area);
+}

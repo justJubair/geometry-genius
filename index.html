@@ -82,6 +82,72 @@
                         </div>
                       </div>
                       <!-- parallelogram ends -->
+                   
+                      <!-- rhombus -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="mt-7 p-4"><img src="./images/rhombus.png" alt="" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Rhombus</h2>
+                          <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <!-- input container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="rhombus-diagonal-one" class="border px-2 border-black w-20 bg-gray-100" placeholder="d">
+                            <span>cm</span>
+                            <input type="number" id="rhombus-diagonal-two" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="d">
+                            <span>cm</span>
+                         </div>
+                         <div id="rhombus-area">
+                         </div>
+                          <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- rhombus ends -->
+                      
+                      <!-- pentagon -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="mt-7 p-4"><img src="./images/pentagon.png" alt="" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Pentagon</h2>
+                          <p class="text-center">Area (A) = 0.5 x p x b</p>
+                        <!-- input container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="pentagon-perimeter" class="border px-2 border-black w-20 bg-gray-100" placeholder="p">
+                            <span>cm</span>
+                            <input type="number" id="pentagon-apothem" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="b">
+                            <span>cm</span>
+                         </div>
+                         <div id="pentagon-area">
+                         </div>
+                          <div class="card-actions">
+                            <button onclick="calculatePentagonArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- pentagon ends -->
+                      
+                      <!-- ellipse -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="mt-7 p-4"><img src="./images/ellipse.png" alt="" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Ellipse</h2>
+                          <p class="text-center">Area (A) = 𝝅ab</p>
+                        <!-- input container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="rhombus-diagonal-one" class="border px-2 border-black w-20 bg-gray-100" placeholder="a">
+                            <span>cm</span>
+                            <input type="number" id="rhombus-diagonal-two" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="b">
+                            <span>cm</span>
+                         </div>
+                         <div id="ellipse-area">
+                         </div>
+                          <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ellipse ends -->
                 </div>
                 <!-- area container -->
                 <div class="lg:w-[300px] border text-center">
