@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- daisy UI and tailwindcss cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Geometry Genius</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <!-- main container -->
+            <div class="flex gap-8 flex-col mx-5 my-7 lg:flex-row ">
+                <!-- shape container -->
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Triangle -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="p-4"><img src="./images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Triangle</h2>
+                          <p class="text-center">Area (A) = 0.5 x b x h</p>
+                         <!-- input field container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="triangle-base" class="border px-2 border-black w-20 bg-gray-100" placeholder="b">
+                            <span>cm</span>
+                            <input type="number" id="triangle-height" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="h">
+                            <span>cm</span>
+                         </div>
+                          <div id="triangle-area">
+                            
+                          </div>
+                          <div class="card-actions">
+                            <button onclick="calculateTriangleArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Rectangle -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="mt-3 p-4"><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Rectangle</h2>
+                          <p class="text-center">Area (A) = w x l</p>
+                         <!-- input field container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="" class="border px-2 border-black w-20 bg-gray-100" placeholder="w">
+                            <span>cm</span>
+                            <input type="number" id="" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="l">
+                            <span>cm</span>
+                         </div>
+                         <div id="rectangle-area">
+                        </div>
+                          <div class="card-actions">
+                            <button onclick="" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Parallelogram -->
+                    <div class="card bg-base-100 lg:w-80 shadow-xl">
+                        <figure class="mt-7 p-4"><img src="./images/parallelogram.png" alt="" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-xl font-semibold">Parallelogram</h2>
+                          <p class="text-center">Area (A) = b x h</p>
+                        <!-- input container -->
+                          <div class="text-center my-4">
+                            <input type="number" id="" class="border px-2 border-black w-20 bg-gray-100" placeholder="b">
+                            <span>cm</span>
+                            <input type="number" id="" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="h">
+                            <span>cm</span>
+                         </div>
+                         <div id="parallelogram-area">
+                         </div>
+                          <div class="card-actions">
+                            <button onclick="" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- parallelogram ends -->
+                </div>
+                <!-- area container -->
+                <div class="lg:w-[300px] border text-center">
+                    <h3 class="text-xl underline font-semibold">Area Calculation</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- js file -->
+    <script src="index.js"></script>
+</body>
+</html>
