@@ -32,3 +32,18 @@ function calculateTriangleArea() {
     setInnerHTMLArea('triangle-area', area)
 }
 
+// calculate the area of rectangle
+function calculateRectangleArea() {
+    const width = getInputValue('rectangle-width'),
+          length = getInputValue('rectangle-length'),
+          area = width * length;
+    setInnerHTMLArea('rectangle-area', area);      
+}
+
+// calculate the area of parallelogram
+function calculateParallelogramArea() {
+    const base = getInputValue('parallelogram-base'),
+          height = getInputValue('parallelogram-height'),
+          area = base * height;
+    setInnerHTMLArea('parallelogram-area', area);      
+}

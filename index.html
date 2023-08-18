@@ -8,7 +8,6 @@
     <!-- daisy UI and tailwindcss cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <title>Geometry Genius</title>
 </head>
 <body>
@@ -50,15 +49,15 @@
                           <p class="text-center">Area (A) = w x l</p>
                          <!-- input field container -->
                           <div class="text-center my-4">
-                            <input type="number" id="" class="border px-2 border-black w-20 bg-gray-100" placeholder="w">
+                            <input type="number" id="rectangle-width" class="border px-2 border-black w-20 bg-gray-100" placeholder="w">
                             <span>cm</span>
-                            <input type="number" id="" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="l">
+                            <input type="number" id="rectangle-length" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="l">
                             <span>cm</span>
                          </div>
                          <div id="rectangle-area">
                         </div>
                           <div class="card-actions">
-                            <button onclick="" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                            <button onclick="calculateRectangleArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -70,15 +69,15 @@
                           <p class="text-center">Area (A) = b x h</p>
                         <!-- input container -->
                           <div class="text-center my-4">
-                            <input type="number" id="" class="border px-2 border-black w-20 bg-gray-100" placeholder="b">
+                            <input type="number" id="parallelogram-base" class="border px-2 border-black w-20 bg-gray-100" placeholder="b">
                             <span>cm</span>
-                            <input type="number" id="" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="h">
+                            <input type="number" id="parallelogram-height" class="border px-2 ml-3 border-black w-20 bg-gray-100" placeholder="h">
                             <span>cm</span>
                          </div>
                          <div id="parallelogram-area">
                          </div>
                           <div class="card-actions">
-                            <button onclick="" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn bg-blue-500 hover:bg-blue-900 text-white w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -91,8 +90,6 @@
             </div>
         </section>
     </main>
-
-
     <!-- js file -->
     <script src="index.js"></script>
 </body>
