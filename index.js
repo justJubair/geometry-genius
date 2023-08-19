@@ -24,13 +24,23 @@ function setInnerHTMLArea(areaId, area) {
 
 function addAreaToLog(shapeNameId, area) {
     const p = document.createElement('p'),
+          div = document.createElement('div'),
           areaLog = document.getElementById('area-log'),
           count = areaLog.childElementCount,
           shapeName = document.getElementById(shapeNameId).innerText;  
-    p.innerHTML = `${count}. ${shapeName}: ${area}cm<sup>2</sup> <button class="btn btn-sm text-white btn-success ml-2 normal-case">Convert <p>m<sup>2</sup></p></button>`;
+    p.innerHTML = `${count}. ${shapeName}: ${area}cm<sup>2</sup>`;
     p.className = 'font-semibold my-3 px-2 text-left';
-    areaLog.appendChild(p);
+    div.className = 'flex flex-row-reverse items-center justify-end';
+    div.innerHTML = `<button id="convert-btn" class="btn btn-sm text-white btn-success ml-2 normal-case">Convert <p>m<sup>2</sup></p></button>`
+    div.appendChild(p);
+    areaLog.appendChild(div);
+    console.log(button);
 }
+
+// covert to centimeter to meter
+document.getElementById('convert-btn').addEventListener('click', function(e){
+    console.log(e.target);
+})
 // Reuseable functions ends
 
 
